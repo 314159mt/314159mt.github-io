@@ -5,6 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Human Resources Hub</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0; /* Remove default margin */
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #welcome-message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        #contributors {
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #contributors h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.2em;
+        }
+
+        #contributors ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        #contributors ul li {
+            margin-bottom: 0.5em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,5 +105,26 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="welcome-message">
+            <p>
+                Welcome to the HR Learning Hub, your comprehensive resource for understanding Human Resources concepts and practices.
+                Explore the links above to learn about the HR Cycle, Fair Work Act, Employment Contracts, National Employment Standards, and more.
+            </p>
+        </section>
+
+        <section id="contributors">
+            <h2>Created By:</h2>
+            <ul>
+                <li>Matthew</li>
+                <li>Ronin</li>
+                <li>Sean</li>
+                <li>Jono</li>
+                <li>Rayan</li>
+            </ul>
+        </section>
+    </main>
+
 </body>
 </html>
