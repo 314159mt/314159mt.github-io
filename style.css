@@ -24,7 +24,7 @@ footer {
 
 body {
     width: 100%;
-    background-color: #001721; /* Dark background for a professional look */
+    background-color: #fff;
     color: #000;
     line-height: 1.6;
     overflow-x: hidden;
@@ -145,7 +145,7 @@ footer {
 }
 
 .nes-entitlement h4 {
-    color: #ddd;
+    color: #000;
     margin-top: 0;
     margin-bottom: 0.5em;
     border-bottom: 2px solid #777;
