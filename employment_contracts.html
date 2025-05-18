@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Resources Hub - Employment Contracts</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            margin-bottom: 2em;
+            padding: 1.5em;
+            border: 1px solid #555;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #ddd;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #777;
+            padding-bottom: 0.3em;
+        }
+
+        section ul {
+            margin-top: 0.5em;
+            padding-left: 1.5em;
+        }
+
+        section ul li {
+            margin-bottom: 0.3em;
+        }
+
+        .contract-container, .redundancy-container {
+            display: block; /* Changed from flex to block */
+        }
+
+        .contract-container .text-content,
+        .redundancy-container .text-content {
+            padding-right: 0; /* Removed padding-right */
+        }
+
+        .contract-container .image-content,
+        .redundancy-container .image-content {
+            margin-top: 1em; /* Added margin for spacing below text */
+        }
+
+        .contract-container .image-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Employment Contracts</h1>
+        <nav>
+            <ul>
+                <li><button class="nav-button" onclick="window.location.href='Home_Page.html'">Home</button></li>
+                <li><button class="nav-button" onclick="window.location.href='hr_cycle.html'">HR Cycle (ADMS)</button></li>
+                <li><button class="nav-button" onclick="window.location.href='fair_work.html'">Fair Work Act</button></li>
+                <li><button class="nav-button" onclick="window.location.href='employment_contracts.html'">Employment Contracts</button></li>
+                <li><button class="nav-button" onclick="window.location.href='nes.html'">National Employment Standards</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contract-container">
+            <div class="text-content">
+                <h2>Employee Contracts</h2>
+                <p>Employee contracts are an agreement between the employer and the employee. Contracts can be confirmed through verbal or written agreement.</p>
+            </div>
+            <div class="image-content">
+                <img src="employee_contract_image.jpeg" alt="Employee Contract Illustration">
+            </div>
+        </section>
+
+        <section>
+            <h2>Awards vs Enterprise Agreements</h2>
+            <p>Awards are the minimum guidelines set by the Fair Work Commission who decide the minimum rates for employment based on their industry. Awards are legally binding documents that if breached, can result in severe penalties and employees may take legal action if necessary.</p>
+            <p>Agreements are legally binding documents that bend the terms of NES Awards but must not be lower than the already set minimum conditions. Main reasons why employers would use agreements are to clearly outline the agreements for the contract/clear expectations, legal protection, proper dispute resolution. Simpler definition use for presentation, “Outline the Term and Conditions of employment”</p>
+        </section>
+
+        <section>
+            <h2>National Employment Standards (NES)</h2>
+            <p>Refers to National Employment Standards</p>
+            <ul>
+                <li><strong>Full-time employees:</strong> Maximum 38 hours/week unless additional hours are reasonable.</li>
+                <li><strong>Part-time/casual employees:</strong> Maximum 38 hours or their ordinary hours/week.</li>
+                <li>Employees can request flexible arrangements if they are: Pregnant, a parent, a carer, have a disability, are 55+, or experiencing family/domestic violence. Employers can refuse requests only on reasonable business grounds.</li>
+                <li><strong>Unpaid Parental Leave:</strong> 12 months for birth or adoption, with an option to request an additional 12 months. Flexible Leave: Up to 100 days within 24 months of birth/adoption. Special Leave: For pregnancy-related illness or miscarriage. Return to Work Guarantee: Employees return to their pre-leave position or a similar one.</li>
+                <li>10 days/year for illness or caring responsibilities. Unpaid carer’s leave: 2 days per occasion. Compassionate leave: 2 days for serious illness, injury, death, stillbirth, or miscarriage.</li>
+                <li>Employees are entitled to be absent on public holidays unless requested to work reasonably. Payment: Base rate for ordinary hours if absent.</li>
+            </ul>
+        </section>
+
+        <section class="redundancy-container">
+            <div class="text-content">
+                <h2>Redundancy Pay</h2>
+                <p>Employees are entitled to redundancy pay if their job is no longer required, except in cases of ordinary and customary turnover of labor or insolvency/bankruptcy of the employer.</p>
+                <p>Certain exclusions apply, such as employees with: less than 12 months of continuous service, casual employees, apprentices, and employees covered by industry-specific redundancy schemes.</p>
+                <p>Redundancy pay does not apply to employees terminated for serious misconduct, casual employees, or those employed for a specified period, task, or season.</p>
+                <h3>Amount of Redundancy Pay:</h3>
+                <p>The amount is calculated based on the employee's continuous service with the employer:</p>
+                <ul>
+                    <li>Less than 1 year: 0 weeks pay</li>
+                    <li>1 year but less than 2 years: 4 weeks pay</li>
+                    <li>2 years but less than 3 years: 6 weeks pay</li>
+                    <li>3 years but less than 4 years: 7 weeks pay</li>
+                    <li>4 years but less than 5 years: 8 weeks pay</li>
+                    <li>5 years but less than 6 years: 10 weeks pay</li>
+                    <li>6 years but less than 7 years: 11 weeks pay</li>
+                    <li>7 years but less than 8 years: 12 weeks pay</li>
+                    <li>8 years but less than 9 years: 13 weeks pay</li>
+                    <li>9 years but less than 10 years: 14 weeks pay</li>
+                    <li>10 years or more: 16 weeks pay</li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="employee_contract_image2.png" alt="Employee Contract Illustration" style="max-width: 50%; height: auto;">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
