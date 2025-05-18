@@ -6,24 +6,54 @@
     <title>National Employment Standards</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .nes-entitlement {
-            margin-bottom: 2em;
-            padding: 1.5em;
-            border: 1px solid #555;
-            border-radius: 8px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
-        .nes-entitlement h4 {
-            color: #ddd;
-            margin-top: 0;
-            margin-bottom: 0.5em;
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 0.3em;
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
         }
 
-        .nes-entitlement ul {
-            margin-top: 0.5em;
-            padding-left: 1.5em;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #nes {
+            text-align: left;
         }
 
         #nes h2 {
@@ -32,10 +62,12 @@
             margin-bottom: 0.5em;
             border-bottom: 2px solid #007bff;
             padding-bottom: 0.3em;
+            text-align: center;
         }
 
         #nes > p {
             margin-bottom: 1em;
+            text-align: left;
         }
 
         #nes h3 {
@@ -44,6 +76,34 @@
             margin-bottom: 1em;
             border-bottom: 2px solid #007bff;
             padding-bottom: 0.3em;
+            text-align: left;
+        }
+
+        .nes-entitlement {
+            margin-bottom: 2em;
+            padding: 1.5em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .nes-entitlement h4 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.3em;
+            font-size: 1.2em;
+        }
+
+        .nes-entitlement ul {
+            margin-top: 0.5em;
+            padding-left: 1.5em;
+            list-style-type: disc;
+        }
+
+        .nes-entitlement ul li {
+            margin-bottom: 0.3em;
         }
 
         #contributors {
@@ -71,6 +131,13 @@
             margin-bottom: 0.5em;
         }
 
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
