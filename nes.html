@@ -271,7 +271,113 @@
             </div>
         </section>
     </main>
+<head>
+  <meta charset="UTF-8">
+  <title>NES Match Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .term, .definition {
+      width: 45%;
+      padding: 10px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      background: white;
+      min-height: 60px;
+    }
+    .term {
+      background-color: #cce5ff;
+      cursor: grab;
+    }
+    .definition {
+      background-color: #f8f9fa;
+    }
+    .over {
+      background-color: #d4edda !important;
+    }
+    .match-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Match the Employment Term to its Definition</h2>
+  <div class="container">
+    <div class="term" draggable="true" id="Annual Leave">Annual Leave</div>
+    <div class="term" draggable="true" id="Parental Leave">Parental Leave</div>
+    <div class="term" draggable="true" id="Super Contributions">Superannuation Contributions</div>
+    <div class="term" draggable="true" id="Max Hours">Maximum Weekly Hours</div>
+    <div class="term" draggable="true" id="Flexible Work">Flexible Working Arrangements</div>
+    <div class="term" draggable="true" id="Personal Leave">Personal/Carer's Leave</div>
+    <div class="term" draggable="true" id="Long Service">Long Service Leave</div>
+    <div class="term" draggable="true" id="Termination Notice">Notice of Termination and Redundancy</div>
+    <div class="term" draggable="true" id="Casual">Casual Employment</div>
+  </div>
 
+  <h3>Drop Here:</h3>
+  <div class="container">
+    <div class="definition" data-answer="Max Hours">An employer cannot request an employee to work more than 38h/week or the agreed upon hours.</div>
+    <div class="definition" data-answer="Casual">An employment relationship with no firm advance commitment to ongoing work.</div>
+    <div class="definition" data-answer="Parental Leave">Leave granted to employees who have/will have the responsibility to care for a child.</div>
+    <div class="definition" data-answer="Termination Notice">Minimum period an employer must notify employees of the end of service for full/part time employees.</div>
+    <div class="definition" data-answer="Flexible Work">Flexibility in working location, pattern and hours.</div>
+    <div class="definition" data-answer="Annual Leave">Paid time off from work based on regular/standard pay rate, usually for 4 weeks.</div>
+    <div class="definition" data-answer="Long Service">A special type of leave granted to employees who have been with the same employer for over 10 years.</div>
+    <div class="definition" data-answer="Super Contributions">A minimum contribution of 11.5% for Full time and part time employees to prepare for retirement.</div>
+    <div class="definition" data-answer="Personal Leave">Leave granted to employees who are unable to work due to a sickness or injury, or to care for a kin.</div>
+  </div>
+
+  <script>
+    const terms = document.querySelectorAll('.term');
+    const definitions = document.querySelectorAll('.definition');
+
+    let draggedItem = null;
+
+    terms.forEach(term => {
+      term.addEventListener('dragstart', () => {
+        draggedItem = term;
+      });
+    });
+
+    definitions.forEach(def => {
+      def.addEventListener('dragover', e => {
+        e.preventDefault();
+        def.classList.add('over');
+      });
+
+      def.addEventListener('dragleave', () => {
+        def.classList.remove('over');
+      });
+
+      def.addEventListener('drop', () => {
+        def.classList.remove('over');
+        if (draggedItem) {
+          if (draggedItem.id === def.dataset.answer) {
+            def.textContent = draggedItem.textContent + " ✅";
+            draggedItem.remove();
+          } else {
+            alert("❌ Incorrect match. Try again.");
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
     
 </body>
 </html>
